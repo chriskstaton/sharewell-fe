@@ -24,7 +24,16 @@ const RedPage = () => {
 				>
 					Open Modal 2
 				</button>
-				<Link href={"/"}>Back to home</Link>
+			</div>
+			<div>
+				<Link href={"/"}>
+					<button
+						style={{ margin: "15px" }}
+						className="px-4 py-2 bg-white text-red-500"
+					>
+						Back to home
+					</button>
+				</Link>
 			</div>
 
 			{modal1Open && (
