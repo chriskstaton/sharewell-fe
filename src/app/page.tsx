@@ -3,9 +3,9 @@ import Link from "next/link";
 const HomePage = () => {
 	return (
 		<div className="min-h-screen flex flex-col justify-center items-center">
-			<h1 className="text-4xl font-bold">Home</h1>
+			<h1 className="text-4xl font-sans">Home</h1>
 			<nav className="mt-8">
-				<ul className="flex space-x-4">
+				<ul className="flex space-x-4 font-sans">
 					<li>
 						<Link id="green" href="green">
 							Green Page

@@ -9,7 +9,7 @@ const GreenPage = () => {
 	const [modal2Open, setModal2Open] = useState(false);
 
 	return (
-		<div className="min-h-screen bg-green-500 text-white flex flex-col items-center">
+		<div className="min-h-screen bg-green-500 text-white flex flex-col items-center font-sans">
 			<h1 className="text-6xl mt-8">GREEN</h1>
 			<div className="mt-8 flex space-x-4">
 				<button

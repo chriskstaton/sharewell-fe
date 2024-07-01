@@ -9,7 +9,7 @@ const BluePage = () => {
 	const [modal3Open, setModal3Open] = useState(false);
 
 	return (
-		<div className="min-h-screen bg-blue-500 text-white flex flex-col items-center">
+		<div className="min-h-screen bg-blue-500 text-white flex flex-col items-center font-sans">
 			<h1 className="text-6xl mt-8">BLUE</h1>
 			<div className="mt-8 flex space-x-4">
 				<button
