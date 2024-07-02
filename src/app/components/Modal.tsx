@@ -50,17 +50,42 @@ const Modal: React.FC<ModalProps> = ({
 					<div className="text-white text-[14px] font-poppins font-medium leading-[19.6px] pl-[48px]">
 						Div 1
 					</div>
-					<div className="text-white text-[16px] font-poppins font-medium leading-[22.4px] pl-[48px]">
-						Div 2
+					<div className="flex flex-col pl-[48px]">
+						<div className="text-white text-[16px] font-poppins font-medium leading-[22.4px]">
+							Div 2a
+						</div>
+						<div className="text-white text-[16px] font-poppins font-medium leading-[22.4px]">
+							Div 2b
+						</div>
 					</div>
 					<div className="absolute right-[0px] bottom-0">
 						<Logo />
 					</div>
 				</div>
-				<div className="flex px-6 pt-6 items-center gap-2.5 self-stretch ml-auto">
+				<div className="flex justify-between items-start px-6 pt-6 self-stretch">
+					<div className="flex flex-col gap-2.5">
+						<div className="text-left text-[#4A4A52] font-poppins text-[14px] font-normal leading-[19.6px]">
+							Text 1
+						</div>
+						<div className="text-left text-[#687CEB] font-poppins text-[16px] font-bold leading-[22.4px]">
+							Text 2
+						</div>
+					</div>
 					<CloseButton onClick={() => closeModal(modalNumber)} />
 				</div>
-				<div className="p-4 w-full text-left">{content}</div>
+				<div className="flex flex-col px-6 pt-4 pb-6 justify-center items-start gap-4 self-stretch">
+					<div className="text-left text-[#292B2E] font-poppins text-[14px] font-normal leading-[19.6px]">
+						Additional Text
+					</div>
+				</div>
+				<div className="flex flex-col justify-center items-center gap-[10px] self-stretch px-8 py-3">
+					<div className="text-center text-[#4A4A52] font-poppins text-[15px] font-medium leading-[21px]">
+						Another Additional Text
+					</div>
+					<button className="flex justify-center items-center gap-2.5 px-8 py-3 w-full rounded-[12px] bg-buttonBackground">
+						Button Text
+					</button>
+				</div>
 			</div>
 		</div>
 	);

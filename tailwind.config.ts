@@ -19,6 +19,7 @@ const config: Config = {
 			},
 			colors: {
 				purpleCustom: "#687CEB", // Custom purple color
+				buttonBackground: "rgba(50, 167, 173, 0.10)",
 			},
 			boxShadow: {
 				custom: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)", // Custom box shadow
