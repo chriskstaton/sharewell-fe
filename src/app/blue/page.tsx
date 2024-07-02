@@ -36,17 +36,31 @@ const BluePage = () => {
 
 			{modal2Open && (
 				<Modal
-					title="Modal 2"
 					modalNumber={2}
-					content={<p>This is the content of Modal 2</p>}
-				></Modal>
+					headerTitle="Modal 2"
+					headerDescription="Lorem Ipsum is fun"
+					headerDate="Friday, Jun 04, 2023"
+					headerTime="09:00pm - 09:30pm PST"
+					detailTitle="Lorem Ipsum"
+					detailHost="Lorem Ipsum"
+					detailDescription="Lorem Ipsum is simply dummy cillum dolore eu fugiat nulla pariatur. cillum dolore eu fugiat nulla pariatur."
+					buttonDescription="Lorem Ipsum is simply dummy text."
+					buttonTitle="Lorem Ipsum"
+				/>
 			)}
 			{modal3Open && (
 				<Modal
-					title="Modal 3"
 					modalNumber={3}
-					content={<p>This is the content of Modal 3</p>}
-				></Modal>
+					headerTitle="Modal 3"
+					headerDescription="Lorem Ipsum is wack"
+					headerDate="Wednesday, Jun 21, 2023"
+					headerTime="07:00pm - 07:30pm EST"
+					detailTitle="Lorem Ipsum"
+					detailHost="Lorem Ipsum"
+					detailDescription="Lorem Ipsum qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
+					buttonDescription="Lorem Ipsum is simply dummy text."
+					buttonTitle="Lorem Ipsum"
+				/>
 			)}
 		</div>
 	);

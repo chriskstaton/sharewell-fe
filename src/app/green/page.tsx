@@ -36,17 +36,31 @@ const GreenPage = () => {
 
 			{modal1Open && (
 				<Modal
-					title="Modal 1"
 					modalNumber={1}
-					content={<p>This is the content of Modal 1</p>}
-				></Modal>
+					headerTitle="Modal 1"
+					headerDescription="Lorem Ipsum is simply"
+					headerDate="Thursday, Jun 22, 2024"
+					headerTime="06:00pm - 07:30pm EST"
+					detailTitle="Lorem Ipsum"
+					detailHost="Lorem Ipsum"
+					detailDescription="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's"
+					buttonDescription="Lorem Ipsum is simply dummy text."
+					buttonTitle="Lorem Ipsum"
+				/>
 			)}
 			{modal2Open && (
 				<Modal
-					title="Modal 2"
 					modalNumber={2}
-					content={<p>This is the content of Modal 2</p>}
-				></Modal>
+					headerTitle="Modal 2"
+					headerDescription="Lorem Ipsum is fun"
+					headerDate="Friday, Jun 04, 2023"
+					headerTime="09:00pm - 09:30pm PST"
+					detailTitle="Lorem Ipsum"
+					detailHost="Lorem Ipsum"
+					detailDescription="Lorem Ipsum is simply dummy cillum dolore eu fugiat nulla pariatur. cillum dolore eu fugiat nulla pariatur."
+					buttonDescription="Lorem Ipsum is simply dummy text."
+					buttonTitle="Lorem Ipsum"
+				/>
 			)}
 		</div>
 	);
