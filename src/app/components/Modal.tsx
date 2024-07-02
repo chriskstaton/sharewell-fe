@@ -1,5 +1,7 @@
 import React, { ReactNode, useEffect, useRef } from "react";
 import { useModalStore } from "../store/modalStore";
+import CloseButton from "./CloseButton";
+import Logo from "./Logo";
 
 interface ModalProps {
 	title: string;
@@ -36,17 +38,29 @@ const Modal: React.FC<ModalProps> = ({
 	}, [closeModal, modalNumber]);
 
 	return (
-		<div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center font-sans">
+		<div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
 			<div
 				ref={modalRef}
-				className="relative bg-white p-4 rounded-md w-11/12 max-w-lg"
+				className="relative flex w-[640px] flex-col items-center rounded-[12px] bg-white"
 			>
-				<h2 className="text-2xl mb-4">{title}</h2>
-				<button onClick={onClose} className="absolute top-4 right-4 text-black">
-					&times;
-				</button>
-				{children}
-				<div>{content}</div>
+				<div className="flex flex-col h-[224px] justify-center gap-[12px] self-stretch bg-purpleCustom shadow-custom rounded-t-[12px] relative">
+					<h2 className="text-left text-white text-[32px] font-poppins font-medium leading-[44.8px] pl-[48px]">
+						{title}
+					</h2>
+					<div className="text-white text-[14px] font-poppins font-medium leading-[19.6px] pl-[48px]">
+						Div 1
+					</div>
+					<div className="text-white text-[16px] font-poppins font-medium leading-[22.4px] pl-[48px]">
+						Div 2
+					</div>
+					<div className="absolute right-[0px] bottom-0">
+						<Logo />
+					</div>
+				</div>
+				<div className="flex px-6 pt-6 items-center gap-2.5 self-stretch ml-auto">
+					<CloseButton onClick={() => closeModal(modalNumber)} />
+				</div>
+				<div className="p-4 w-full text-left">{content}</div>
 			</div>
 		</div>
 	);
