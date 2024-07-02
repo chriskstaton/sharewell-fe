@@ -1,14 +1,23 @@
 import React, { ReactNode, useEffect, useRef } from "react";
+import { useModalStore } from "../store/modalStore";
 
 interface ModalProps {
 	title: string;
-	children: ReactNode;
-	content?: string;
-	onClose: () => void;
+	children?: ReactNode;
+	content?: ReactNode;
+	modalNumber: number;
+	onClose?: () => void;
 }
 
-const Modal: React.FC<ModalProps> = ({ title, content, children, onClose }) => {
+const Modal: React.FC<ModalProps> = ({
+	title,
+	content,
+	modalNumber,
+	children,
+	onClose,
+}) => {
 	const modalRef = useRef<HTMLDivElement>(null);
+	const closeModal = useModalStore((state) => state.closeModal);
 
 	useEffect(() => {
 		const handleClickOutside = (event: MouseEvent) => {
@@ -16,7 +25,7 @@ const Modal: React.FC<ModalProps> = ({ title, content, children, onClose }) => {
 				modalRef.current &&
 				!modalRef.current.contains(event.target as Node)
 			) {
-				onClose();
+				closeModal(modalNumber);
 			}
 		};
 
@@ -24,7 +33,7 @@ const Modal: React.FC<ModalProps> = ({ title, content, children, onClose }) => {
 		return () => {
 			document.removeEventListener("mousedown", handleClickOutside);
 		};
-	}, [onClose]);
+	}, [closeModal, modalNumber]);
 
 	return (
 		<div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center font-sans">
