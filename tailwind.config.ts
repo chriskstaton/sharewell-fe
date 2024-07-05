@@ -26,6 +26,7 @@ const config: Config = {
 				purpleCustom: "#687CEB",
 				blackNeutral: "#292B2E",
 				charcoalNeutral: "#4A4A52",
+				greyAshNeutral: "#E5E7EB",
 				buttonBackground: "rgba(50, 167, 173, 0.10)",
 				buttonDisabled: "rgba(41, 43, 46, 0.20)",
 			},
