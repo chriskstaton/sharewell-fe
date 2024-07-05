@@ -9,7 +9,7 @@ const config: Config = {
 	],
 	theme: {
 		screens: {
-			web: { max: "1279px" },
+			web: { max: "1799px" },
 			tablet: { max: "1023px" },
 			mobile: { max: "639px" },
 		},

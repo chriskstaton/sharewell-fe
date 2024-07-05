@@ -55,10 +55,7 @@ const Modal: React.FC<ModalProps> = ({
 			{/*  modal  */}
 			<div
 				ref={modalRef}
-				className="relative flex flex-col items-center rounded-[12px] bg-white
-				web:w-[640px] web:h-[498px]
-				tablet:w-[640px] tablet:h-[498px]
-				mobile:w-[339px] mobile:h-[505px]"
+				className="relative flex flex-col items-center rounded-[12px] bg-white web:w-[640px] web:h-[498px] tablet:w-[640px] tablet:h-[498px] mobile:w-[339px] mobile:h-[505px]"
 			>
 				{/* top half of modal */}
 				<div className="flex flex-col h-[224px] justify-center gap-[12px] self-stretch bg-purpleCustom shadow-custom rounded-t-[12px] relative">
