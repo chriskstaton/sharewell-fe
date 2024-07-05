@@ -8,7 +8,7 @@ const GreenPage = () => {
 	const { modal1Open, modal2Open, openModal } = useModalStore();
 
 	return (
-		<div className="min-h-screen bg-green-500 text-white flex flex-col items-center font-sans">
+		<div className="min-h-[200vh] bg-green-500 text-white flex flex-col items-center font-sans">
 			<h1 className="text-6xl mt-8">GREEN</h1>
 			<div className="mt-8 flex space-x-4">
 				<button

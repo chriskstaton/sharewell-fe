@@ -8,7 +8,7 @@ const RedPage = () => {
 	const { modal1Open, modal3Open, openModal } = useModalStore();
 
 	return (
-		<div className="min-h-screen bg-red-500 text-white flex flex-col items-center font-sans">
+		<div className="min-h-[200vh] bg-red-500 text-white flex flex-col items-center font-sans">
 			<h1 className="text-6xl mt-8">RED</h1>
 			<div className="mt-8 flex space-x-4">
 				<button
