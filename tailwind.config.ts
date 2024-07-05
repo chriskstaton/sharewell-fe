@@ -30,6 +30,9 @@ const config: Config = {
 				buttonBackground: "rgba(50, 167, 173, 0.10)",
 				buttonDisabled: "rgba(41, 43, 46, 0.20)",
 			},
+			lineHeight: {
+				"140": "1.4",
+			},
 			boxShadow: {
 				custom: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)", // Custom box shadow Desktop Modal 1
 			},
