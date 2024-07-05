@@ -73,7 +73,7 @@ const Modal: React.FC<ModalProps> = ({
 							{headerTime}
 						</div>
 					</div>
-					<div className="absolute right-0 bottom-0 mobile:absolute mobile:right-[-27px] mobile:bottom-[-42px] mobile:w-[204px] mobile:h-[204px] mobile:p-[27px]">
+					<div className="absolute right-0 bottom-0 mobile:absolute mobile:right-[-20px] mobile:bottom-[-36px] mobile:w-[204px] mobile:h-[204px] mobile:p-[20px]">
 						<Logo />
 					</div>
 				</div>
@@ -98,7 +98,7 @@ const Modal: React.FC<ModalProps> = ({
 					<div className="text-center text-[#4A4A52] font-poppins text-[15px] mobile:font-medium tablet:font-normal web:font-medium leading-[140%]">
 						{buttonDescription}
 					</div>
-					<button className="flex justify-center items-center gap-2.5 px-8 py-3 w-full rounded-[12px] bg-buttonBackground text-buttonDisabled leading-[140%]">
+					<button className="flex justify-center items-center gap-2.5 px-8 py-3 w-full rounded-[12px] bg-buttonBackground text-buttonDisabled mobile:font-medium mobile:tracking-mobile-spacing tablet:font-semibold web:font-normal tablet:uppercase web:uppercase mobile:normal-case">
 						{buttonTitle}
 					</button>
 				</div>
