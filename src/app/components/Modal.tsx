@@ -3,7 +3,7 @@ import { useModalStore } from "../store/modalStore";
 import CloseButton from "./CloseButton";
 import Logo from "./Logo";
 
-interface ModalProps {
+export interface ModalProps {
 	headerTitle: string;
 	headerDescription: string;
 	headerDate: string;

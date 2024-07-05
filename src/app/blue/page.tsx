@@ -2,6 +2,7 @@
 import Modal from "../components/Modal";
 import Link from "next/link";
 import { useModalStore } from "../store/modalStore";
+import { data2, data3 } from "../modalData";
 
 const BluePage = () => {
 	const { modal2Open, modal3Open, openModal } = useModalStore();
@@ -34,34 +35,8 @@ const BluePage = () => {
 				</Link>
 			</div>
 
-			{modal2Open && (
-				<Modal
-					modalNumber={2}
-					headerTitle="Modal 2"
-					headerDescription="Lorem Ipsum is fun"
-					headerDate="Friday, Jun 04, 2023"
-					headerTime="09:00pm - 09:30pm PST"
-					detailTitle="Lorem Ipsum"
-					detailHost="Lorem Ipsum"
-					detailDescription="Lorem Ipsum is simply dummy cillum dolore eu fugiat nulla pariatur. cillum dolore eu fugiat nulla pariatur."
-					buttonDescription="Lorem Ipsum is simply dummy text."
-					buttonTitle="Lorem Ipsum"
-				/>
-			)}
-			{modal3Open && (
-				<Modal
-					modalNumber={3}
-					headerTitle="Modal 3"
-					headerDescription="Lorem Ipsum is wack"
-					headerDate="Wednesday, Jun 21, 2023"
-					headerTime="07:00pm - 07:30pm EST"
-					detailTitle="Lorem Ipsum"
-					detailHost="Lorem Ipsum"
-					detailDescription="Lorem Ipsum qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit. qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit"
-					buttonDescription="Lorem Ipsum is simply dummy text."
-					buttonTitle="Lorem Ipsum"
-				/>
-			)}
+			{modal2Open && <Modal {...data2} />}
+			{modal3Open && <Modal {...data3} />}
 		</div>
 	);
 };
