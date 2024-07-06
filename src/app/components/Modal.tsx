@@ -96,7 +96,7 @@ const Modal: React.FC<ModalProps> = ({
 							<div className="text-center text-charcoalNeutral font-poppins text-[14px] web:font-medium tablet:font-normal mobile:font-medium leading-140">
 								{buttonDescription}
 							</div>
-							<button className="flex justify-center items-center gap-2.5 px-8 py-3 w-full rounded-[12px] bg-buttonBackground text-buttonDisabled web:font-normal tablet:font-semibold mobile:font-medium  web:uppercase tablet:uppercase mobile:normal-case web:leading-140 tablet:leading-140 mobile:leading-100 mobile:tracking-mobile-spacing">
+							<button className="flex justify-center items-center gap-[8px] web:px-[32px] web:py-[12px] tablet:px-[32px] tablet:py-[12px] mobile:px-[72px] mobile:py-[16px] w-full rounded-[12px] bg-buttonBackground text-buttonDisabled web:font-normal tablet:font-semibold mobile:font-medium  web:uppercase tablet:uppercase mobile:normal-case web:leading-140 tablet:leading-140 mobile:leading-100 mobile:tracking-mobile-spacing">
 								{buttonTitle}
 							</button>
 						</div>
@@ -149,7 +149,7 @@ const Modal: React.FC<ModalProps> = ({
 							<div className="text-center text-charcoalNeutral font-poppins web:text-[15px] tablet:text-[14px] mobile:text-[14px] font-medium leading-140">
 								{buttonDescription}
 							</div>
-							<button className="flex justify-center items-center gap-2.5 px-8 py-3 w-full rounded-[12px] bg-buttonBackground text-buttonDisabled font-medium web:leading-140 tablet:leading-140 mobile:leading-100 mobile:tracking-mobile-spacing">
+							<button className="flex justify-center items-center gap-[8px] web:px-[32px] web:py-[12px] tablet:px-[32px] tablet:py-[12px] mobile:px-[72px] mobile:py-[16px] w-full rounded-[12px] bg-buttonBackground text-buttonDisabled font-medium web:leading-140 tablet:leading-140 mobile:leading-100 mobile:tracking-mobile-spacing">
 								{buttonTitle}
 							</button>
 						</div>
@@ -203,7 +203,7 @@ const Modal: React.FC<ModalProps> = ({
 							<div className="text-center text-charcoalNeutral font-poppins text-[14px] font-medium leading-140">
 								{buttonDescription}
 							</div>
-							<button className="flex justify-center items-center gap-2.5 px-8 py-3 w-full rounded-[12px] bg-buttonBackground text-buttonDisabled web:font-normal tablet:font-medium mobile:font-medium  web:uppercase tablet:uppercase mobile:normal-case web:leading-140 tablet:leading-140 mobile:leading-100 mobile:tracking-mobile-spacing">
+							<button className="flex justify-center items-centergap-[8px] web:px-[32px] web:py-[12px] tablet:px-[32px] tablet:py-[12px] mobile:px-[72px] mobile:py-[16px] w-full rounded-[12px] bg-buttonBackground text-buttonDisabled  web:text-[18px] web:font-normal tablet:font-medium mobile:font-medium web:leading-[32px] tablet:leading-140 mobile:leading-100 web:tracking-webButtonSpacing mobile:tracking-mobileButtonSpacing">
 								{buttonTitle}
 							</button>
 						</div>

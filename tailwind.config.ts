@@ -36,7 +36,8 @@ const config: Config = {
 				"100": "100%",
 			},
 			letterSpacing: {
-				"mobile-spacing": "0.5px",
+				mobileButtonSpacing: "0.5px",
+				webButtonSpacing: "0.472px",
 			},
 			boxShadow: {
 				custom: "0px 4px 4px 0px rgba(0, 0, 0, 0.25)", // Custom box shadow Desktop Modal 1
