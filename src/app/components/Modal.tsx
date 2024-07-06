@@ -53,21 +53,21 @@ const Modal: React.FC<ModalProps> = ({
 				return (
 					<div
 						ref={modalRef}
-						className="relative flex flex-col items-center rounded-[12px] bg-white web:w-[640px] web:h-[498px] tablet:w-[640px] tablet:h-[498px] mobile:w-[339px] mobile:h-[505px]"
+						className="relative flex flex-col items-center rounded-[12px] bg-whiteNeutral web:w-[640px] web:h-[auto] tablet:w-[640px] tablet:h-[auto] mobile:w-[339px] mobile:h-[auto]"
 					>
 						{/* top half of modal */}
 						<div className="flex flex-col web:h-[224px] tablet:h-[224px] mobile:h-[181px] justify-center gap-[12px] self-stretch bg-purpleNeutral web:shadow-custom tablet:shadow-none mobile:shadow-none rounded-t-[12px] relative">
-							<h2 className="text-left text-white web:text-[32px] tablet:text-[32px] mobile:text-[18px] font-poppins font-medium web:pl-[48px] tablet:pl-[48px] mobile:pl-[24px] leading-140">
+							<h2 className="text-left text-whiteNeutral web:text-[32px] tablet:text-[32px] mobile:text-[18px] font-poppins font-medium web:pl-[48px] tablet:pl-[48px] mobile:pl-[24px] leading-140">
 								{headerTitle}
 							</h2>
-							<div className="text-white text-[14px] font-poppins font-medium web:pl-[48px] tablet:pl-[48px] mobile:pl-[24px] leading-140">
+							<div className="text-whiteNeutral text-[14px] font-poppins font-medium web:pl-[48px] tablet:pl-[48px] mobile:pl-[24px] leading-140">
 								{headerDescription}
 							</div>
 							<div className="flex flex-col web:pl-[48px] tablet:pl-[48px] mobile:pl-[24px]">
-								<div className="text-white web:text-[16px] tablet:text-[16px] mobile:text-[14px] font-poppins font-medium leading-140">
+								<div className="text-whiteNeutral web:text-[16px] tablet:text-[16px] mobile:text-[14px] font-poppins font-medium leading-140">
 									{headerDate}
 								</div>
-								<div className="text-white web:text-[16px] tablet:text-[16px] mobile:text-[14px] font-poppins font-medium leading-140">
+								<div className="text-whiteNeutral web:text-[16px] tablet:text-[16px] mobile:text-[14px] font-poppins font-medium leading-140">
 									{headerTime}
 								</div>
 							</div>
@@ -92,7 +92,7 @@ const Modal: React.FC<ModalProps> = ({
 								{detailDescription}
 							</div>
 						</div>
-						<div className="flex flex-col justify-center items-center gap-[10px] self-stretch px-8 py-3 border-t border-greyAshNeutral">
+						<div className="flex flex-col justify-center items-center gap-[10px] self-stretch px-[24px] py-[24px] border-t border-greyAshNeutral">
 							<div className="text-center text-charcoalNeutral font-poppins text-[14px] web:font-medium tablet:font-normal mobile:font-medium leading-140">
 								{buttonDescription}
 							</div>
@@ -106,21 +106,21 @@ const Modal: React.FC<ModalProps> = ({
 				return (
 					<div
 						ref={modalRef}
-						className="relative flex flex-col items-center rounded-[12px] bg-white web:w-[640px] web:h-[498px] tablet:w-[640px] tablet:h-[498px] mobile:w-[339px] mobile:h-[505px]"
+						className="relative flex flex-col items-center rounded-[12px] bg-whiteNeutral web:w-[640px] web:h-[auto] tablet:w-[640px] tablet:h-[auto] mobile:w-[339px] mobile:h-[auto]"
 					>
 						{/* top half of modal */}
 						<div className="flex flex-col web:h-[224px] tablet:h-[224px] mobile:h-[181px] justify-center gap-[12px] self-stretch bg-purpleNeutral rounded-t-[12px] relative">
-							<h2 className="text-left text-white web:text-[32px] tablet:text-[32px] mobile:text-[18px] font-poppins font-medium web:pl-[48px] tablet:pl-[48px] mobile:pl-[24px] leading-140">
+							<h2 className="text-left text-whiteNeutral web:text-[32px] tablet:text-[32px] mobile:text-[18px] font-poppins font-medium web:pl-[48px] tablet:pl-[48px] mobile:pl-[24px] leading-140">
 								{headerTitle}
 							</h2>
-							<div className="text-white text-[14px] font-poppins font-medium web:pl-[48px] tablet:pl-[48px] mobile:pl-[24px] leading-140">
+							<div className="text-whiteNeutral text-[14px] font-poppins font-medium web:pl-[48px] tablet:pl-[48px] mobile:pl-[24px] leading-140">
 								{headerDescription}
 							</div>
 							<div className="flex flex-col web:pl-[48px] tablet:pl-[48px] mobile:pl-[24px]">
-								<div className="text-white web:text-[16px] tablet:text-[16px] mobile:text-[14px] font-poppins font-medium leading-140">
+								<div className="text-whiteNeutral web:text-[16px] tablet:text-[16px] mobile:text-[14px] font-poppins font-medium leading-140">
 									{headerDate}
 								</div>
-								<div className="text-white web:text-[16px] tablet:text-[16px] mobile:text-[14px] font-poppins font-medium leading-140">
+								<div className="text-whiteNeutral web:text-[16px] tablet:text-[16px] mobile:text-[14px] font-poppins font-medium leading-140">
 									{headerTime}
 								</div>
 							</div>
@@ -145,7 +145,7 @@ const Modal: React.FC<ModalProps> = ({
 								{detailDescription}
 							</div>
 						</div>
-						<div className="flex flex-col justify-center items-center gap-[10px] self-stretch px-8 py-3 border-t border-Neutral">
+						<div className="flex flex-col justify-center items-center gap-[10px] self-stretch px-[24px] py-[24px] border-t border-greyAshNeutral">
 							<div className="text-center text-charcoalNeutral font-poppins web:text-[15px] tablet:text-[14px] mobile:text-[14px] font-medium leading-140">
 								{buttonDescription}
 							</div>
@@ -160,21 +160,21 @@ const Modal: React.FC<ModalProps> = ({
 				return (
 					<div
 						ref={modalRef}
-						className="relative flex flex-col items-center rounded-[12px] bg-white web:w-[640px] web:h-[498px] tablet:w-[640px] tablet:h-[498px] mobile:w-[339px] mobile:h-[505px]"
+						className="relative flex flex-col items-center rounded-[12px] bg-whiteNeutral web:w-[640px] web:h-[auto] tablet:w-[640px] tablet:h-[auto] mobile:w-[339px] mobile:h-[auto]"
 					>
 						{/* top half of modal */}
 						<div className="flex flex-col web:h-[224px] tablet:h-[224px] mobile:h-[181px] justify-center gap-[12px] self-stretch bg-purpleNeutral rounded-t-[12px] relative">
-							<h2 className="text-left text-white web:text-[32px]  tablet:text-[32px] mobile:text-[18px] font-poppins font-medium web:pl-[48px] tablet:pl-[48px] mobile:pl-[24px] leading-140">
+							<h2 className="text-left text-whiteNeutral web:text-[32px]  tablet:text-[32px] mobile:text-[18px] font-poppins font-medium web:pl-[48px] tablet:pl-[48px] mobile:pl-[24px] leading-140">
 								{headerTitle}
 							</h2>
-							<div className="text-white text-[14px] font-poppins font-medium web:pl-[48px] tablet:pl-[48px] mobile:pl-[24px] leading-140">
+							<div className="text-whiteNeutral text-[14px] font-poppins font-medium web:pl-[48px] tablet:pl-[48px] mobile:pl-[24px] leading-140">
 								{headerDescription}
 							</div>
 							<div className="flex flex-col web:pl-[48px] tablet:pl-[48px] mobile:pl-[24px]">
-								<div className="text-white web:text-[16px] tablet:text-[16px] mobile:text-[14px] font-poppins font-medium leading-140">
+								<div className="text-whiteNeutral web:text-[16px] tablet:text-[16px] mobile:text-[14px] font-poppins font-medium leading-140">
 									{headerDate}
 								</div>
-								<div className="text-white web:text-[16px] tablet:text-[16px] mobile:text-[14px] font-poppins font-medium leading-140">
+								<div className="text-whiteNeutral web:text-[16px] tablet:text-[16px] mobile:text-[14px] font-poppins font-medium leading-140">
 									{headerTime}
 								</div>
 							</div>
@@ -199,7 +199,7 @@ const Modal: React.FC<ModalProps> = ({
 								{detailDescription}
 							</div>
 						</div>
-						<div className="flex flex-col justify-center items-center gap-[10px] self-stretch px-8 py-3 border-t border-greyAshNeutral">
+						<div className="flex flex-col justify-center items-center gap-[10px] self-stretch px-[24px] py-[24px] border-t border-greyAshNeutral">
 							<div className="text-center text-charcoalNeutral font-poppins text-[14px] font-medium leading-140">
 								{buttonDescription}
 							</div>
