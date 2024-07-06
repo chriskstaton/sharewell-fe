@@ -31,7 +31,8 @@ const config: Config = {
 				buttonDisabled: "rgba(41, 43, 46, 0.20)",
 			},
 			lineHeight: {
-				"140": "1.4",
+				"140": "140%",
+				"100": "100%",
 			},
 			letterSpacing: {
 				"mobile-spacing": "0.5px",
