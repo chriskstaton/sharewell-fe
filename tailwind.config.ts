@@ -22,7 +22,6 @@ const config: Config = {
 			fontFamily: {
 				sans: ["Poppins", "sans-serif"],
 				mobileButton: ["Roboto", "sans-serif"],
-				//TODO add roboto
 			},
 			colors: {
 				whiteNeutral: "#FFF",
