@@ -169,6 +169,8 @@ const Modal: React.FC<ModalProps> = ({
 							</h2>
 							<div className="text-whiteNeutral text-[14px] font-sans font-medium web:pl-[48px] tablet:pl-[48px] mobile:pl-[24px] leading-140">
 								{headerDescription}
+								{/* TODO change desktop text to 
+								'Lorem Ipsum is wack' */}
 							</div>
 							<div className="flex flex-col web:pl-[48px] tablet:pl-[48px] mobile:pl-[24px]">
 								<div className="text-whiteNeutral web:text-[16px] tablet:text-[16px] mobile:text-[14px] font-sans font-medium leading-140">
