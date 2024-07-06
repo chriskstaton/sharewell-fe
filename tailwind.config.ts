@@ -23,7 +23,7 @@ const config: Config = {
 				sans: ["Poppins", "sans-serif"],
 			},
 			colors: {
-				purpleCustom: "#687CEB",
+				purpleNeutral: "#687CEB",
 				blackNeutral: "#292B2E",
 				charcoalNeutral: "#4A4A52",
 				greyAshNeutral: "#E5E7EB",
