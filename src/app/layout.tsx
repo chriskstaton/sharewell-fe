@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
-import "./globals.css";
+import { poppins, roboto } from "./fonts/fonts";
 
-const inter = Inter({ subsets: ["latin"] });
+import "./globals.css";
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -16,8 +15,15 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			{/* <html lang="en" className={poppins.className}> */}
 			<head>
 				<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+				<link rel="preconnect" href="https://fonts.googleapis.com" />
+				<link
+					rel="preconnect"
+					href="https://fonts.gstatic.com"
+					crossOrigin="anonymous"
+				/>
 				<link
 					href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
 					rel="stylesheet"
@@ -28,7 +34,7 @@ export default function RootLayout({
 				/>
 				{/* //TODO */}
 			</head>
-			<body className={inter.className}>{children}</body>
+			<body>{children}</body>
 		</html>
 	);
 }
