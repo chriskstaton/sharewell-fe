@@ -77,7 +77,7 @@ const Modal: React.FC<ModalProps> = ({
 						</div>
 						{/* bottom half of modal */}
 						<div className="flex justify-between items-start px-[24px] pt-[24px] pb-[0px] self-stretch">
-							<div className="flex flex-col gap-4px">
+							<div className="flex flex-col gap-[4px]">
 								<div className="text-left text-charcoalNeutral font-poppins text-[14px] web:font-normal tablet:font-medium mobile:font-normal leading-140">
 									{detailTitle}
 								</div>
@@ -130,7 +130,7 @@ const Modal: React.FC<ModalProps> = ({
 						</div>
 						{/* bottom half of modal */}
 						<div className="flex justify-between items-start px-[24px] pt-[24px] pb-[0px] self-stretch">
-							<div className="flex flex-col gap-4px">
+							<div className="flex flex-col gap-[4px]">
 								<div className="text-left text-charcoalNeutral font-poppins text-[14px] web:font-medium tablet:font-medium mobile:font-medium leading-140">
 									{detailTitle}
 								</div>
@@ -164,7 +164,7 @@ const Modal: React.FC<ModalProps> = ({
 					>
 						{/* top half of modal */}
 						<div className="flex flex-col web:h-[224px] tablet:h-[224px] mobile:h-[181px] justify-center gap-[12px] self-stretch bg-purpleNeutral rounded-t-[12px] relative">
-							<h2 className="text-left text-whiteNeutral web:text-[32px]  tablet:text-[32px] mobile:text-[18px] font-poppins font-medium web:pl-[48px] tablet:pl-[48px] mobile:pl-[24px] leading-140">
+							<h2 className="text-left text-whiteNeutral web:text-[32px] tablet:text-[32px] mobile:text-[18px] font-poppins font-medium web:pl-[48px] tablet:pl-[48px] mobile:pl-[24px] leading-140">
 								{headerTitle}
 							</h2>
 							<div className="text-whiteNeutral text-[14px] font-poppins font-medium web:pl-[48px] tablet:pl-[48px] mobile:pl-[24px] leading-140">
@@ -184,7 +184,7 @@ const Modal: React.FC<ModalProps> = ({
 						</div>
 						{/* bottom half of modal */}
 						<div className="flex justify-between items-start px-[24px] pt-[24px] pb-[0px] self-stretch">
-							<div className="flex flex-col gap-4px">
+							<div className="flex flex-col gap-[4px]">
 								<div className="text-left web:text-charcoalNeutral tablet:text-charcoalNeutral mobile:text-purpleNeutral font-poppins web:uppercase tablet:normal-case mobile:normal-case web:text-[16px] tablet:text-[14px] mobile:text-[14px] web:font-normal tablet:font-normal mobile:font-medium leading-140">
 									{detailTitle}
 								</div>
