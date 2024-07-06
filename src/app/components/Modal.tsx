@@ -76,7 +76,7 @@ const Modal: React.FC<ModalProps> = ({
 							</div>
 						</div>
 						{/* bottom half of modal */}
-						<div className="flex justify-between items-start px-6 pt-6 self-stretch">
+						<div className="flex justify-between items-start px-[24px] pt-[24px] pb-[0px] self-stretch">
 							<div className="flex flex-col gap-4px">
 								<div className="text-left text-charcoalNeutral font-poppins text-[14px] web:font-normal tablet:font-medium mobile:font-normal leading-140">
 									{detailTitle}
@@ -87,7 +87,7 @@ const Modal: React.FC<ModalProps> = ({
 							</div>
 							<CloseButton onClick={() => closeModal(modalNumber)} />
 						</div>
-						<div className="flex flex-col px-6 pt-4 pb-6 justify-center items-start gap-4 self-stretch">
+						<div className="flex flex-col pt-[16px] pb-[24px] pl-[24px] pr-[24px] justify-center items-start gap-[16px] self-stretch">
 							<div className="text-left text-blackNeutral web:text-[14px] tablet:text-[14px] font-poppins mobile:text-[16px] web:font-normal tablet:font-medium mobile:font-medium leading-140">
 								{detailDescription}
 							</div>
@@ -129,7 +129,7 @@ const Modal: React.FC<ModalProps> = ({
 							</div>
 						</div>
 						{/* bottom half of modal */}
-						<div className="flex justify-between items-start px-6 pt-6 self-stretch">
+						<div className="flex justify-between items-start px-[24px] pt-[24px] pb-[0px] self-stretch">
 							<div className="flex flex-col gap-4px">
 								<div className="text-left text-charcoalNeutral font-poppins text-[14px] web:font-medium tablet:font-medium mobile:font-medium leading-140">
 									{detailTitle}
@@ -140,7 +140,7 @@ const Modal: React.FC<ModalProps> = ({
 							</div>
 							<CloseButton onClick={() => closeModal(modalNumber)} />
 						</div>
-						<div className="flex flex-col px-6 pt-4 pb-6 justify-center items-start gap-4 self-stretch">
+						<div className="flex flex-col pt-[16px] pb-[24px] pl-[24px] pr-[24px] justify-center items-start gap-[16px] self-stretch">
 							<div className="text-left text-blackNeutral font-poppins web:text-[14px] tablet:text-[16px] mobile:text-[16px] web:font-normal tablet:font-medium mobile:font-medium leading-140">
 								{detailDescription}
 							</div>
@@ -183,7 +183,7 @@ const Modal: React.FC<ModalProps> = ({
 							</div>
 						</div>
 						{/* bottom half of modal */}
-						<div className="flex justify-between items-start px-6 pt-6 self-stretch">
+						<div className="flex justify-between items-start px-[24px] pt-[24px] pb-[0px] self-stretch">
 							<div className="flex flex-col gap-4px">
 								<div className="text-left web:text-charcoalNeutral tablet:text-charcoalNeutral mobile:text-purpleNeutral font-poppins web:uppercase tablet:normal-case mobile:normal-case web:text-[16px] tablet:text-[14px] mobile:text-[14px] web:font-normal tablet:font-normal mobile:font-medium leading-140">
 									{detailTitle}
@@ -194,7 +194,7 @@ const Modal: React.FC<ModalProps> = ({
 							</div>
 							<CloseButton onClick={() => closeModal(modalNumber)} />
 						</div>
-						<div className="flex flex-col px-6 pt-4 pb-6 justify-center items-start gap-4 self-stretch">
+						<div className="flex flex-col pt-[16px] pb-[24px] pl-[24px] pr-[24px] justify-center items-start gap-[16px] self-stretch">
 							<div className="text-left text-blackNeutral font-poppins web:text-[14px] tablet:text-[14px] mobile:text-[16px] font-medium leading-140">
 								{detailDescription}
 							</div>

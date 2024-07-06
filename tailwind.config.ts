@@ -21,6 +21,7 @@ const config: Config = {
 			},
 			fontFamily: {
 				sans: ["Poppins", "sans-serif"],
+				//TODO add roboto
 			},
 			colors: {
 				whiteNeutral: "#FFF",
