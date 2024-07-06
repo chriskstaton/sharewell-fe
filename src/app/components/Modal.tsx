@@ -222,6 +222,9 @@ const Modal: React.FC<ModalProps> = (props) => {
 		// dim background
 		<div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
 			{renderModalContent()}
+			<div className="absolute bottom-0 left-1/2 transform -translate-x-1/2 p-[24px] text-whiteNeutral">
+				{screenType}
+			</div>
 		</div>
 	);
 };
