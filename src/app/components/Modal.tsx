@@ -39,7 +39,10 @@ const Modal: React.FC<ModalProps> = (props) => {
 
 	const screenType = useScreenType();
 	const updatedProps = replaceWordInProps(props, "cool", "wack", screenType);
+
 	useEffect(() => {
+		document.body.style.overflow = "hidden";
+
 		const handleClickOutside = (event: MouseEvent) => {
 			if (
 				modalRef.current &&
@@ -51,6 +54,7 @@ const Modal: React.FC<ModalProps> = (props) => {
 
 		document.addEventListener("mousedown", handleClickOutside);
 		return () => {
+			document.body.style.overflow = "auto";
 			document.removeEventListener("mousedown", handleClickOutside);
 		};
 	}, [closeModal, modalNumber]);
