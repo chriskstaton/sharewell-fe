@@ -1,9 +1,11 @@
-import React, { ReactNode, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef } from "react";
 import { useModalStore } from "../store/modalStore";
+
 import CloseButton from "./CloseButton";
-import Logo from "./Logo";
+
 import { replaceWordInProps } from "./replaceWordInProps";
 import { useScreenType } from "./useScreenType";
+import LogoCombined from "./LogoCombined";
 
 export interface ModalProps {
 	headerTitle: string;
@@ -77,9 +79,18 @@ const Modal: React.FC<ModalProps> = (props) => {
 									{headerTime}
 								</div>
 							</div>
-							<div className="absolute right-0 bottom-0 mobile:absolute mobile:right-[-20px] mobile:bottom-[-36px] mobile:w-[204px] mobile:h-[204px] mobile:p-[20px]">
+
+							{/* original solution, does not match figma svg crop */}
+							{/* <div className="absolute right-0 bottom-0 mobile:absolute mobile:right-[-20px] mobile:bottom-[-36px] mobile:w-[204px] mobile:h-[204px] mobile:p-[20px]">
 								<Logo />
+							</div> */}
+
+							<div className="absolute right-0 bottom-0">
+								<LogoCombined />
 							</div>
+
+							{/* attempt to crop SVG on mobile instead of viewBox svg edits */}
+							{/* <div className="mobile:relative mobile:overflow-hidden mobile:top-[10px] mobile:right-[-10px]"> */}
 						</div>
 						{/* bottom half of modal */}
 						<div className="flex justify-between items-start px-[24px] pt-[24px] pb-[0px] self-stretch">
@@ -97,6 +108,10 @@ const Modal: React.FC<ModalProps> = (props) => {
 							<div className="text-left text-blackNeutral font-sans web:text-[14px] tablet:text-[14px] mobile:text-[16px] web:font-normal tablet:font-medium mobile:font-medium leading-140">
 								{detailDescription}
 							</div>
+						</div>
+						{/* vertical line */}
+						<div className="hidden web:block tablet:block absolute right-[-33px] top-[345px] bottom-0">
+							<div className="w-[97px] h-[7px] border-b-[7px] border-r-0 border-l-0 border-t-0 rounded-full border-[#E4E4E4] mobile:border-[0] rotate-[-90deg]"></div>
 						</div>
 						<div className="flex flex-col justify-center items-center gap-[10px] self-stretch px-[24px] py-[24px] border-t border-greyAshNeutral">
 							<div className="text-center text-charcoalNeutral font-sans text-[14px] web:font-medium tablet:font-normal mobile:font-medium leading-140">
@@ -130,8 +145,12 @@ const Modal: React.FC<ModalProps> = (props) => {
 									{headerTime}
 								</div>
 							</div>
-							<div className="absolute right-0 bottom-0 mobile:absolute mobile:right-[-20px] mobile:bottom-[-36px] mobile:w-[204px] mobile:h-[204px] mobile:p-[20px]">
+							{/* <div className="absolute right-0 bottom-0 mobile:absolute mobile:right-[-20px] mobile:bottom-[-36px] mobile:w-[204px] mobile:h-[204px] mobile:p-[20px]">
 								<Logo />
+							</div> */}
+
+							<div className="absolute right-0 bottom-0">
+								<LogoCombined />
 							</div>
 						</div>
 						{/* bottom half of modal */}
@@ -150,6 +169,10 @@ const Modal: React.FC<ModalProps> = (props) => {
 							<div className="text-left text-blackNeutral font-sans web:text-[14px] tablet:text-[16px] mobile:text-[14px] web:font-normal tablet:font-medium mobile:font-medium leading-140">
 								{detailDescription}
 							</div>
+						</div>
+						{/* vertical line */}
+						<div className="hidden web:block tablet:block absolute right-[-33px] top-[345px] bottom-0">
+							<div className="w-[97px] h-[7px] border-b-[7px] border-r-0 border-l-0 border-t-0 rounded-full border-[#E4E4E4] mobile:border-[0] rotate-[-90deg]"></div>
 						</div>
 						<div className="flex flex-col justify-center items-center gap-[10px] self-stretch px-[24px] py-[24px] border-t border-greyAshNeutral">
 							<div className="text-center text-charcoalNeutral font-sans web:text-[15px] tablet:text-[14px] mobile:text-[14px] font-medium leading-140">
@@ -184,8 +207,12 @@ const Modal: React.FC<ModalProps> = (props) => {
 									{updatedProps.headerTime}
 								</div>
 							</div>
-							<div className="absolute right-0 bottom-0 mobile:absolute mobile:right-[-20px] mobile:bottom-[-36px] mobile:w-[204px] mobile:h-[204px] mobile:p-[20px]">
+							{/* <div className="absolute right-0 bottom-0 mobile:absolute mobile:right-[-20px] mobile:bottom-[-36px] mobile:w-[204px] mobile:h-[204px] mobile:p-[20px]">
 								<Logo />
+							</div> */}
+
+							<div className="absolute right-0 bottom-0">
+								<LogoCombined />
 							</div>
 						</div>
 						{/* bottom half of modal */}
@@ -204,6 +231,10 @@ const Modal: React.FC<ModalProps> = (props) => {
 							<div className="text-left text-blackNeutral font-sans web:text-[14px] tablet:text-[14px] mobile:text-[16px] font-medium leading-140">
 								{updatedProps.detailDescription}
 							</div>
+						</div>
+						{/* vertical line */}
+						<div className="hidden web:block tablet:block absolute right-[-33px] top-[345px] bottom-0">
+							<div className="w-[97px] h-[7px] border-b-[7px] border-r-0 border-l-0 border-t-0 rounded-full border-[#E4E4E4] mobile:border-[0] rotate-[-90deg]"></div>
 						</div>
 						<div className="flex flex-col justify-center items-center gap-[10px] self-stretch px-[24px] py-[24px] border-t border-greyAshNeutral">
 							<div className="text-center text-charcoalNeutral font-sans text-[14px] font-medium leading-140">
