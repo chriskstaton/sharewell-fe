@@ -1,11 +1,9 @@
 "use client";
-import Modal from "../components/Modal";
 import Link from "next/link";
 import { useModalStore } from "../store/modalStore";
-import { data2, data3 } from "../modalData";
 
 const BluePage = () => {
-	const { modal2Open, modal3Open, openModal } = useModalStore();
+	const { openModal } = useModalStore();
 
 	return (
 		<div className="min-h-[200vh] bg-blue-500 text-white flex flex-col items-center font-sans">
@@ -35,8 +33,8 @@ const BluePage = () => {
 				</Link>
 			</div>
 
-			{modal2Open && <Modal {...data2} />}
-			{modal3Open && <Modal {...data3} />}
+			{/* {modal2Open && <Modal {...data2} />}
+			{modal3Open && <Modal {...data3} />} */}
 		</div>
 	);
 };

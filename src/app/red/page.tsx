@@ -1,11 +1,9 @@
 "use client";
-import Modal from "../components/Modal";
 import Link from "next/link";
 import { useModalStore } from "../store/modalStore";
-import { data1, data3 } from "../modalData";
 
 const RedPage = () => {
-	const { modal1Open, modal3Open, openModal } = useModalStore();
+	const { openModal } = useModalStore();
 
 	return (
 		<div className="min-h-[200vh] bg-red-500 text-white flex flex-col items-center font-sans">
@@ -35,8 +33,8 @@ const RedPage = () => {
 				</Link>
 			</div>
 
-			{modal1Open && <Modal {...data1} />}
-			{modal3Open && <Modal {...data3} />}
+			{/* {modal1Open && <Modal {...data1} />}
+			{modal3Open && <Modal {...data3} />} */}
 		</div>
 	);
 };

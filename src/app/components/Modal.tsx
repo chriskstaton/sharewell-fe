@@ -1,3 +1,5 @@
+// "use client";
+
 import React, { useEffect, useRef } from "react";
 import { useModalStore } from "../store/modalStore";
 
@@ -41,8 +43,6 @@ const Modal: React.FC<ModalProps> = (props) => {
 	const updatedProps = replaceWordInProps(props, "cool", "wack", screenType);
 
 	useEffect(() => {
-		document.body.style.overflow = "hidden";
-
 		const handleClickOutside = (event: MouseEvent) => {
 			if (
 				modalRef.current &&
@@ -53,9 +53,11 @@ const Modal: React.FC<ModalProps> = (props) => {
 		};
 
 		document.addEventListener("mousedown", handleClickOutside);
+		document.body.style.overflow = "hidden";
+
 		return () => {
-			document.body.style.overflow = "auto";
 			document.removeEventListener("mousedown", handleClickOutside);
+			document.body.style.overflow = "auto";
 		};
 	}, [closeModal, modalNumber]);
 
