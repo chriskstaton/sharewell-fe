@@ -268,9 +268,10 @@ const Modal: React.FC<ModalProps> = (props) => {
 				>
 					{/* top half of modal */}
 					<div
-						className={`flex flex-col text-left text-whiteNeutral font-medium pl-[48px] mobile:pl-[24px] relative h-[224px] mobile:h-[181px] justify-center gap-[12px] self-stretch bg-purpleNeutral ${styles?.headerClass} rounded-t-[12px]`}
+						className={`flex flex-col text-left text-whiteNeutral font-medium pl-[48px] mobile:pl-[24px] relative h-[224px] mobile:h-[181px] justify-center gap-[12px] self-stretch bg-purpleNeutral rounded-t-[12px] ${styles?.headerClass}`}
 					>
-						<h2 className="text-[32px] mobile:text-[18px]">
+						<h2 className="text-[32px] mobile:text-[18px] mobile:pt-[24px] leading-140">
+							{/* include leading-140 here to override default h2 style */}
 							{modalNumber === 3 ? replacedProps.headerTitle : headerTitle}
 						</h2>
 						<div className="text-[14px]">
@@ -307,7 +308,7 @@ const Modal: React.FC<ModalProps> = (props) => {
 					</div>
 					<div className="flex flex-col pt-[16px] pb-[24px] pl-[24px] pr-[24px] justify-center items-start gap-[16px] self-stretch">
 						<div
-							className={`overflow-y-auto max-h-[15vh] text-left text-blackNeutral text-[14px] mobile:text-[16px] font-medium ${styles?.detailDescriptionClass}`}
+							className={`overflow-y-auto max-h-[15vh] text-left text-blackNeutral text-[14px] font-medium ${styles?.detailDescriptionClass}`}
 						>
 							{modalNumber === 3
 								? replacedProps.detailDescription
