@@ -24,17 +24,11 @@ const BluePage = () => {
 			</div>
 			<div>
 				<Link href={"/"}>
-					<button
-						style={{ margin: "15px" }}
-						className="px-4 py-2 bg-white text-blue-500"
-					>
+					<button className="px-4 py-2 bg-white text-blue-500 m-[15px]">
 						Back to home
 					</button>
 				</Link>
 			</div>
-
-			{/* {modal2Open && <Modal {...data2} />}
-			{modal3Open && <Modal {...data3} />} */}
 		</div>
 	);
 };

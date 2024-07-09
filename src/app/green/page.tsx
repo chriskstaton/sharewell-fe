@@ -24,17 +24,11 @@ const GreenPage = () => {
 			</div>
 			<div>
 				<Link href={"/"}>
-					<button
-						style={{ margin: "15px" }}
-						className="px-4 py-2 bg-white text-green-500"
-					>
+					<button className="px-4 py-2 bg-white text-green-500 m-[15px]">
 						Back to home
 					</button>
 				</Link>
 			</div>
-
-			{/* {modal1Open && <Modal {...data1} />}
-			{modal2Open && <Modal {...data2} />} */}
 		</div>
 	);
 };
