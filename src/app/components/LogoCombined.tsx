@@ -7,7 +7,7 @@ const Logo: React.FC = () => {
 	return (
 		<>
 			{screenType === "mobile" ? (
-				<Image src="/logo-mobile.svg" alt="Logo" width={150} height={140} />
+				<Image src="/logo-mobile.svg" alt="Logo" width={136} height={145} />
 			) : (
 				<Image src="/logo.svg" alt="Logo" width={248} height={224} />
 			)}
